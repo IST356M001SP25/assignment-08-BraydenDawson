@@ -54,3 +54,6 @@ with map_col:
     st.subheader("Ticket Location")
     location_map = filtered[['lat', 'lon']].drop_duplicates()
     st.map(location_map.rename(columns={"lat": "latitude", "lon": "longitude"}))
+
+
+#####
